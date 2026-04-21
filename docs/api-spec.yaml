@@ -6,7 +6,8 @@ info:
 servers:
   - url: https://jsonplaceholder.typicode.com
     description: Mock Backend Server
-
+security:
+  - {}
 paths:
   /users:
     get:

@@ -6,7 +6,8 @@ info:
 servers:
   - url: https://jsonplaceholder.typicode.com
     description: Mock Backend Server
-
+security:
+  - BearerAuth: []
 paths:
   /users:
     get:
@@ -60,6 +61,13 @@ components:
           example: "hildegard.org"
         company:
           $ref: '#/components/schemas/Company'
+  securitySchemas :
+    someOtherAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+      
+     
 
     Address:
       type: object

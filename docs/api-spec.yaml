@@ -29,6 +29,8 @@ components:
   schemas:
     User:
       type: object
+      # --- INTENTIONAL MISCONFIGURATION START ---
+      view:workspace_titles: true
       required:
         - id
         - name
